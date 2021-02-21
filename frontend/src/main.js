@@ -6,6 +6,11 @@ import 'vue-material/dist/theme/default.css'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import Vuelidate from 'vuelidate'
+
+Vue.use(require('vue-moment'));
+
+Vue.use(Vuelidate)
 
 Vue.use(VueAxios, axios)
 
@@ -17,3 +22,4 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
