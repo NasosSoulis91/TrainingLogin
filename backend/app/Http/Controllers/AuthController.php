@@ -21,7 +21,7 @@ class AuthController extends Controller
  
         $accessToken = auth()->user()->createToken('authToken')->accessToken;
  
-        return response(['user' => auth()->user(), 'token' => $accessToken]);
+        return response(['message' => 'success', 'user' => auth()->user(), 'token' => $accessToken]);
  
     }
 
